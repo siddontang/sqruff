@@ -1,0 +1,10 @@
+[package]
+name = "sqruff-parser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "SQL parser for sqruff — tokenizer, AST, and multi-dialect parsing"
+
+[dependencies]
+
+[dev-dependencies]

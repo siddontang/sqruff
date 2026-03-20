@@ -1,0 +1,21 @@
+[package]
+name = "sqruff-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "CLI for sqruff — an extremely fast SQL linter and formatter"
+
+[[bin]]
+name = "sqruff"
+path = "src/main.rs"
+
+[dependencies]
+sqruff-core = { path = "../sqruff-core" }
+sqruff-parser = { path = "../sqruff-parser" }
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"

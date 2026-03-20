@@ -1,0 +1,13 @@
+[package]
+name = "sqruff-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core linting and formatting engine for sqruff"
+
+[dependencies]
+sqruff-parser = { path = "../sqruff-parser" }
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]

@@ -1,0 +1,15 @@
+# sqruff configuration
+# See https://github.com/siddontang/sqruff for documentation
+
+dialect = "generic"
+
+[rules]
+# Disable specific rules by code:
+# disable = ["SQ001"]
+disable = []
+
+[format]
+indent = "  "
+uppercase_keywords = true
+max_line_width = 120
+trailing_semicolon = true
