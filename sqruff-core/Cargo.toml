@@ -11,3 +11,20 @@ toml = "0.8"
 serde = { version = "1", features = ["derive"] }
 
 [dev-dependencies]
+criterion = { workspace = true }
+
+[[bench]]
+name = "lexer_bench"
+harness = false
+
+[[bench]]
+name = "parser_bench"
+harness = false
+
+[[bench]]
+name = "lint_bench"
+harness = false
+
+[[bench]]
+name = "format_bench"
+harness = false
